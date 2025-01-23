@@ -1,0 +1,32 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "backend"
+path = "src/main.rs"
+
+[dependencies]
+actix-web = "4.8.0"
+serde = "1.0.204"
+serde_json = "1.0.120"
+env_logger = "0.11.3"
+dotenv = "0.15.0"
+lazy_static = "1.5.0"
+sea-orm = { version = "0.12", features = [ "sqlx-postgres", "runtime-tokio-rustls", "macros" ] }
+sea-orm-cli = "0.12.15"
+futures = "0.3"
+entity = { path = "entity" }
+migration = { path = "migration" }
+sha256 = "1.5.0"
+chrono = "0.4.38"
+jsonwebtoken = "9.3.0"
+actix-web-lab = "0.20.2"
+actix-cors = "0.7.0"
+actix-rt = "2.10.0"
+rand = "0.8.5"
+num-traits = "0.2.19"
+rust_decimal = "1.35.0"
+tokio-cron-scheduler = "0.11.0"
+tokio = "1.39.2"
