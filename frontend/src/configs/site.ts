@@ -108,7 +108,7 @@ export const siteConfig = {
             href: "/rh/users",
         },
         {
-            label: "Liste_Congé",
+            label: "Liste_Formation",
             href: "/rh/listeConge",
         },
         {
@@ -120,15 +120,15 @@ export const siteConfig = {
     navEmploye: [
         {
             label: "Tableau de bord",
-            href: "/employe/dashboard",
+            href: "/formateur/dashboard",
         },
         {
-            label: "Mon Conge",
-            href: "/employe/monConge",
+            label: "Mon Formation",
+            href: "/formateur/monConge",
         },
         {
             label: "Calendrier",
-            href: "/employe/calendrier",
+            href: "/formateur/calendrier",
         },
     ],
 
@@ -142,8 +142,8 @@ export const siteConfig = {
             href: "/admin/users",
         },
         {
-            label: "Département",
-            href: "/admin/departement",
+            label: "Formation",
+            href: "/admin/formation",
         },
     ],
 

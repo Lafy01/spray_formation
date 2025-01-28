@@ -20,17 +20,17 @@ impl MigrationTrait for Migration {
             )
             .await?;
             
-        manager
-            .create_foreign_key(
-                ForeignKey::create()
-                    .name("fk_suphier")
-                    .from(DEPARTEMENT::Table, DEPARTEMENT::ChefDep)
-                    .to(EMPLOYE::Table, EMPLOYE::IdEmpl)
-                    .on_delete(ForeignKeyAction::SetNull)
-                    .on_update(ForeignKeyAction::Cascade)
-                    .to_owned(),
-            )
-            .await?;
+        // manager
+        //     .create_foreign_key(
+        //         ForeignKey::create()
+        //             .name("fk_suphier")
+        //             .from(DEPARTEMENT::Table, DEPARTEMENT::ChefDep)
+        //             .to(EMPLOYE::Table, EMPLOYE::IdEmpl)
+        //             .on_delete(ForeignKeyAction::SetNull)
+        //             .on_update(ForeignKeyAction::Cascade)
+        //             .to_owned(),
+        //     )
+        //     .await?;
 
         Ok(())
     }
@@ -44,14 +44,14 @@ impl MigrationTrait for Migration {
                     .to_owned()
             )
             .await?;
-        manager
-            .drop_foreign_key(
-                ForeignKey::drop()
-                    .name("fk_suphier")
-                    .table(DEPARTEMENT::Table)
-                    .to_owned()
-            )
-            .await?;
+        // manager
+        //     .drop_foreign_key(
+        //         ForeignKey::drop()
+        //             .name("fk_suphier")
+        //             .table(DEPARTEMENT::Table)
+        //             .to_owned()
+        //     )
+        //     .await?;
         Ok(())
     }
 }

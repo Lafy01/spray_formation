@@ -35,7 +35,7 @@ export const AddUser = ({ user }: addUserProps) => {
             prenom_empl: user?.prenom_empl || "",
             email_empl: user?.email_empl || "",
             passw_empl: user?.passw_empl || "",
-            role: user?.role || "employe",
+            role: user?.role || "apprenant",
         },
     })
 

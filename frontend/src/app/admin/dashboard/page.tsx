@@ -41,7 +41,7 @@ export default function DashboardPage() {
             {/* <CreditCard className="h-4 w-4 text-muted-foreground" /> */}
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">+{users?.length - 1}</div>
+            <div className="text-2xl font-bold">+{users?.length}</div>
             <p className="text-xs text-muted-foreground">
               Nombre des Apprenant 
             </p>

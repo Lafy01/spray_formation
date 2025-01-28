@@ -24,7 +24,7 @@ impl MigrationTrait for Migration {
                     .col(ColumnDef::new(DEPARTEMENT::NomDep).string().not_null().unique_key())
                     .col(ColumnDef::new(DEPARTEMENT::DateDebForm).timestamp())
                     .col(ColumnDef::new(DEPARTEMENT::DateFinForm).timestamp())
-                    .col(ColumnDef::new(DEPARTEMENT::ChefDep).string().unique_key())
+                    .col(ColumnDef::new(DEPARTEMENT::ChefDep).string())
                     // .foreign_key(
                     //     ForeignKey::create()
                     //         .name("fk_suphier")

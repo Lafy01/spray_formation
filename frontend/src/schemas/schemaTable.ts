@@ -70,12 +70,12 @@ export const userSchema = z.object({
 
 
 export const userRegister = z.object({
-    n_matricule: z.string().min(2, "Matricule must be at least 2 characters"),
-    id_dep: z.string().min(1, "Departement required"),
-    nom_empl: z.string().min(1, "Nom required"),
+    n_matricule: z.string().min(2, "Le matricule doit comporter au moins 2 caractères"),
+    id_dep: z.string().min(1, "Veuillez entrez sa Formation"),
+    nom_empl: z.string().min(1, "Veuillez entrez son Nom"),
     prenom_empl: z.string(),
-    email_empl: z.string().email("Email must be valid"),
-    passw_empl: z.string().min(6, "Password must be at least 6 characters"),
+    email_empl: z.string().email("Veuillez entez son e-mail"),
+    passw_empl: z.string().min(6, "Le mot de passe doit comporter au moins 6 caractères"),
     role: userRoleSchema,
 });
 

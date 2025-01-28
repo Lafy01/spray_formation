@@ -59,17 +59,17 @@ async fn main() -> Result<(), MainError> {
                 message: err.to_string(),
             })?;
 
-    // Mise à jour BD
-    Migrator::up(&db, None).await.map_err(|err| MainError {
-        message: err.to_string(),
-    })?;
+    // // Mise à jour BD
+    // Migrator::up(&db, None).await.map_err(|err| MainError {
+    //     message: err.to_string(),
+    // })?;
     
-    // // Reinitialise la base de donne
-    // Migrator::fresh(&db)
-    //     .await
-    //     .map_err(|err| MainError {
-    //         message: err.to_string(),
-    //     })?;
+    // Reinitialise la base de donne
+    Migrator::fresh(&db)
+        .await
+        .map_err(|err| MainError {
+            message: err.to_string(),
+        })?;
 
     let app_state = web::Data::new(AppState { db: db.clone() });
 
