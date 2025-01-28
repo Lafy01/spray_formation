@@ -1,4 +1,4 @@
-<h1 align="center">Leave Management & Monitoring</h1>
+<h1 align="center">Spray info</h1>
 
 ### Project with **Javascript** & **Rust** using:
 
@@ -22,9 +22,6 @@
 
 * Authentification
 * CRUD
-* Agenda
-* Planning
-* Cron task
 * migration
 * ...
 
@@ -64,12 +61,3 @@ cargo run
 
 
 <p>Please feek free to contact me if you have any questions or problems</p>
-
-
-[Email](mailto:anthony.perso@gmail.com)
-
-[Facebook]("https://www.facebook.com/anthonyharifetra.rakotoarimanana")
-
-[LinkedIn](http://www.linkedin.com/in/harifetra-anthony-rakotoarimanana-713409250)
-
-<p align="right">RAKOTOARMINANA Harifetra Anthony</p>
